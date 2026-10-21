@@ -1,0 +1,53 @@
+---
+title: "Brain Summary Practical 1"
+author: "Amelie Cutter"
+editor: visual
+---
+
+```{r}
+## I want to calculate the sum of all regionally elevated genes within the forebrain of a human, mouse and pig.
+```
+
+```{r}
+#mouse
+mouse_forebrain_REG <- sum(98, 55, 185, 60)
+print(mouse_forebrain_REG)
+#human
+human_forebrain_REG <- sum(180, 83, 57, 110)
+print(human_forebrain_REG)
+#pig
+pig_forebrain_REG <- sum(157, 109, 45, 31)
+print(pig_forebrain_REG)
+
+```
+
+```         
+ > #human > human_forebrain_REG = sum(180, 83, 57, 110) > print(human_forebrain_REG) [1] 430 > #human > human_forebrain_REG <- sum(180, 83, 57, 110) > print(human_forebrain_REG) [1] 430 > #mouse > mouse_forebrain_REG <- sum(98, 55, 185, 60) > print(mouse_forebrain_REG) [1] 398 >  > #mouse > mouse_forebrain_REG <- sum(98, 55, 185, 60) > print(mouse_forebrain_REG) [1] 398 > #human > human_forebrain_REG <- sum(180, 83, 57, 110) > print(human_forebrain_REG) [1] 430 >  > #mouse > mouse_forebrain_REG <- sum(98, 55, 185, 60) > print(mouse_forebrain_REG) [1] 398 > #human > human_forebrain_REG <- sum(180, 83, 57, 110) > print(human_forebrain_REG) [1] 430 > #pig > pig_forebrain_REG <- sum(157, 109, 45, 31) > print(pig_forebrain_REG) [1] 342 >  > styler:::style_active_file() Using style transformers `styler::tidyverse_style()`
+```
+
+```{r}
+
+```
+
+The organism with the highest number of regionally elevated genes in the forebrain is humans, as 430 is the greatest total produced.
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
