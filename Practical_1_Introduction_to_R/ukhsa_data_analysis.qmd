@@ -1,8 +1,59 @@
 ---
-title: "ukhsa_data_analysis (selfmade)"
-author: "Amelie Cutter"
+title: "Practical_1_Introduction_to_R/ukhsa_data_analysis"
+author: "Amelie Cutter :)"
 ---
+```{r}
+library(tidyverse)
+library(gt)
+```
+```{r}
+rhinovirus <- read_csv("data/ukhsa-chart-download-rhinovirus.csv")
 
+gt(head(rhinovirus))
+```
+
+```{r}
+weather <- read_csv("data/weather_data.csv")
+ggplot(weather)
+ggplot(weather, aes(
+  x = observation_time,
+  y = temperature_c
+))
+
+ggplot(weather, aes(
+  x = observation_time,
+  y = temperature_c
+)) +
+  geom_line(colour = "red") +
+  xlab("Date (day,month,year)") +
+  ylab("Temperature (C)") +
+  ggtitle("Temperature by date!")
+
+```
+```{r}
+uksha <- read_csv("data/ukhsa-chart-download-rhinovirus.csv")
+ggplot(uksha, aes(
+  x = date,
+  y = metric_value
+)) +
+  geom_line(colour = "brown") +
+  xlab("Date") + 
+  ylab("Metric") +
+  ggtitle("I wish I was playing rainworld rn")
+```
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
 ## Quarto
 
 Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
