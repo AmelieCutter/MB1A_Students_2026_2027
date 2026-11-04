@@ -10,8 +10,38 @@ round(3.14159, digits = 2)
 #rep(x, times)
 print(rep(5,7))
 print(rep(x = 5, times = 7))
+print(seq(5, 15, 2.5))
+```
+```{r}
+sum(1,2,5)
 ```
 
+```{r}
+my_variable <- 12
+print(my_variable)
+print(class(my_variable))
+```
+```{r}
+var1 <- 1
+var2 <- "one"
+var3 <- TRUE
+print(var1)
+print(class(var1))
+print(var2)
+print(class(var2))
+print(var3)
+print(class(var3))
+```
+```{r}
+cell_ID1 <- "CX1"
+cell_ID2 <- "CX2"
+treated1 <- TRUE
+treated2 <- FALSE
+num_cells_before1 <- 5415
+num_cells_before2 <- 8123
+num_cells_after1 <- 1432
+num_cells_after2 <- 7543
+```
 
 
 
